@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MusicApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="Theme.MusicApp" parent="Base.Theme.MusicApp">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@color/app_bar_color</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="android:Theme.Material">
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@anim/fade_in</item>
+        <item name="android:windowExitTransition">@anim/fade_out</item>
+
+        <!-- specify shared element transitions -->
+<!--        <item name="android:windowSharedElementEnterTransition">-->
+<!--            @transition/change_image_transform</item>-->
+<!--        <item name="android:windowSharedElementExitTransition">-->
+<!--            @transition/change_image_transform</item>-->
+    </style>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_ripple"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="15dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/music_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_def_music_img"
+            android:contentDescription="@string/app_name"
+            android:paddingVertical="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_note_svgrepo_com"
+             />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/music_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="We do'nt talk anymore"
+        android:textColor="#FFF"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toRightOf="@id/box_img"
+        app:layout_constraintRight_toLeftOf="@id/btn_option"
+        app:layout_constraintTop_toTopOf="@id/box_img" />
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Charlie Push"
+        android:textColor="#B0FFFFFF"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="@id/music_name"
+        app:layout_constraintRight_toRightOf="@id/music_name"
+        app:layout_constraintTop_toBottomOf="@id/music_name" />
+
+    <ImageView
+        android:id="@+id/btn_option"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_option_ripple"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:src="@drawable/ic_menu_vertical_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#B7FFFFFF" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:visibility="gone"
+        app:lottie_colorFilter="@color/active_music_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/box_img"
+        app:layout_constraintRight_toRightOf="@id/box_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/playing_lottie" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

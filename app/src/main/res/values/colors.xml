@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_bg_color">#17212B</color>
+    <color name="app_bar_color">#242F3D</color>
+    <color name="app_active_color">#C46F859E</color>
+    <color name="active_music_text_color">#FFC107</color>
+    <color name="app_no_active_color">#768B9D</color>
+    <color name="app_active_ripple_color">#54FFFFFF</color>
+</resources>
